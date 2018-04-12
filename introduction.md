@@ -1,4 +1,5 @@
-# Advanced Python for HPC
+# Advanced Python
+## for HPC
 
 --
 
@@ -12,13 +13,14 @@
 
 > *Advanced Python* is measured by homeomorphic endofunctors mapping submanifolds of a Hilbert space
 
-* No detailed knowledge what **you know** <!-- .element: class="fragment" -->
-* No detailed knowledge what **you need**
+* No detailed knowledge what you know <!-- .element: class="fragment" -->
+* No detailed knowledge what you need <!-- .element: class="fragment" -->
 
 
     cdef class Course(Workshop):
         def __init__(self, students: Set[Any]):
             ...
+ <!-- .element: class="fragment" -->
 
 * ...inquire, intrude, interact as you see fit <!-- .element: class="fragment" -->
 

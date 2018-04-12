@@ -1,4 +1,10 @@
-# Prologue: A Python walks into a workshop
+## -- Prologue --
+# A Python walks
+## into a workshop
+
+--
+
+## Getting started
 
 * We are about to check...
     * ...your working environment
@@ -9,20 +15,21 @@
 
 ## Getting on the same Page
 
-* Open a terminal/shell  <!-- .element: class="fragment" -->
-* Launch ``python3`` <!-- .element: class="fragment" -->
-* Execute ``print("Hello", "World")`` <!-- .element: class="fragment" -->
-* Execute ``import antigravity`` <!-- .element: class="fragment" -->
+* Open a terminal/shell
+* Launch ``python3``
+* Execute ``print("Hello", "World")``
+* Execute ``import antigravity``
 
 --
 
 ## Vim, Emacs, Nano, Kate, TextMate, Notepad++, ...
 
-* Write and run this script
+* Write and run this as a script
 
         #/usr/bin/env python3
         words = "Hello", "World"
         print(*words)
+<!-- .element: class="fragment" -->
 
 --
 
@@ -33,16 +40,12 @@
     * Step N: ``a, b = b, a + b``
 * Print the first 100 numbers
 
---
+        def fibonacci():
+            a, b = 0, 1
+            while True:
+                yield a
+                a, b = b, a + b
 
-    #/usr/bin/env python3
-    def fibonacci():
-        a, b = 0, 1
-        while True:
-            yield a
-            a, b = b, a + b
-
-    for count, value in enumerate(fibonacci()):
-        if count == 100:
-            break
-        print(value)
+        for value in itertools.islice(fibonacci(), 100):
+            print(value)
+<!-- .element: class="fragment" -->
